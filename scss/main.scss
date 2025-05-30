@@ -1,3 +1,5 @@
+@import "modal.scss";
+
 * {
   margin: 0;
   padding: 0;
@@ -13,11 +15,42 @@ body {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
   padding-top: 100px;
+  .game-buttons {
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+    .start,
+    .restart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fffbfb;
+        transform: scale(1.05);
+      }
+      span {
+        font-size: 20px;
+      }
+    }
+  }
 }
 
-.flip-card {
+#flip-card-container {
   display: grid;
   grid-template-columns: repeat(4, 150px);
   gap: 5px;
@@ -60,7 +93,6 @@ main {
         justify-content: center;
         align-items: center;
       }
-
       .icon {
         width: 150px;
         height: 170px;

@@ -8,114 +8,34 @@
   </head>
   <body>
     <main class="main-content">
-      <div class="flip-card">
-        <div class="card-1" data-card="1">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/angular.png" alt="angular icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-2" data-card="2">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/c++.jpg" alt="c++ icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-3" data-card="3">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img
-                src="./assets/c-sharp.webp"
-                alt="c-sharp icon"
-                class="icon"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="card-4" data-card="4">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/js.webp" alt="js icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-5" data-card="5">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/css.png" alt="css icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-6" data-card="6">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/html.png" alt="html icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <!-- Repeated cards -->
-        <div class="card-1" data-card="1">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/angular.png" alt="angular icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-2" data-card="2">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/c++.jpg" alt="c++ icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-3" data-card="3">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img
-                src="./assets/c-sharp.webp"
-                alt="c-sharp icon"
-                class="icon"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="card-4" data-card="4">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/js.webp" alt="js icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-5" data-card="5">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/css.png" alt="css icon" class="icon" />
-            </div>
-          </div>
-        </div>
-        <div class="card-6" data-card="6">
-          <div class="flip-card-inner">
-            <div class="flip-card-back"></div>
-            <div class="flip-card-front">
-              <img src="./assets/html.png" alt="html icon" class="icon" />
-            </div>
-          </div>
+      <section class="game-buttons">
+        <button class="start">
+          <img src="./assets/shuttle.png" alt="start game" class="icon" />
+          <span>Start game</span>
+        </button>
+        <button class="restart" id="restart">
+          <img src="./assets/refresh.png" alt="refresh icon" class="icon" />
+          <span>New Game</span>
+        </button>
+      </section>
+
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <img src="./assets/X-button.png" alt="close button" class="close-modal" />
+          <h2>Modal Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            voluptatibus.
+          </p>
         </div>
       </div>
+
+      <div id="flip-card-container">
+        <!-- here go cards -->
+      </div>
     </main>
-    <script src="main.js"></script>
+    <script type="module" src="buttons.js"></script>
+    <script type="module" src="cards.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
